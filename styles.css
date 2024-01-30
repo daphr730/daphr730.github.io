@@ -1,0 +1,115 @@
+.circle-container {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    border: 0px solid blue; /* Adjust the border as needed */
+  }
+
+  .circle-container img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .bg-success {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity)) !important;
+  }
+
+  .border-success {
+    --bs-border-opacity: 5;
+    border-color: rgba(var(--bs-success-rgb), var(--bs-border-opacity)) !important;
+  }
+
+  .btn-full-width {
+    width: 100%; /* Make buttons take the full width of their container */
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Hide overflowed text */
+    text-overflow: ellipsis; /* Add ellipsis for overflowed text */
+}
+
+@media (max-width: 768px) {
+    .btn-full-width {
+        font-size: 12px; /* Smaller font size for smaller screens */
+        padding: 10px 5px; /* Smaller padding for smaller screens */
+    }
+}
+
+@media (min-width: 769px) {
+    .btn-full-width {
+        font-size: 16px; /* Larger font size for larger screens */
+        padding: 15px 10px; /* Larger padding for larger screens */
+    }
+}
+
+#adjust-menu-width1 {
+  width: 70%;
+  margin: auto; /* Center the container */
+}
+#adjust-menu-width2 {
+  width: 70%;
+  margin: auto; /* Center the container */
+}
+#adjust-menu-width3 {
+  width: 70%;
+  margin: auto; /* Center the container */
+}
+
+.color-dark_text {
+	color: #D3D3D3;
+}
+
+.child {
+  position: absolute;
+  top: 0px;
+  left: 150px;
+}
+
+.child2 {
+  position: absolute;
+  top: 0px;
+  left: 900px;
+}
+
+.colored_links {
+  color: #dc3545;
+}
+
+.colored_carrousel {
+  background-color: #212529;
+}
+
+
+/* CSS class for the table cells to have a hover effect */
+.hoverable {
+  cursor: pointer; /* Changes the cursor to a pointer to indicate it's clickable */
+  position: relative; /* Set position relative for absolute positioning of the popup */
+}
+
+/* Styles for the popup message */
+.popup-message {
+  display: none; /* Hidden by default */
+  position: absolute; /* Positioned absolutely to the .hoverable */
+  z-index: 10; /* Ensure it's on top */
+  white-space: nowrap; /* Prevents the text from wrapping */
+  background-color: #dc3545; /* Background color of the popup */
+  color: white; /* Text color */
+  padding: 10px 10px; /* Padding inside the popup */
+  border-radius: 5px; /* Rounded corners */
+  left: 100%; /* Position to the right of the .hoverable element */
+  top: 50%; /* Align to the vertical center of the .hoverable element */
+  transform: translateY(-50%); /* Center vertically */
+  margin-left: 10px; /* Space between the .hoverable element and the popup */
+}
+
+/* CSS for the carousel images */
+.carousel-item img {
+  width: 333px; /* Set the width of the images */
+  height: 500px; /* Set the height of the images */
+  /*object-fit: cover; /* This will ensure that the images cover the area without being stretched or squashed */
+}
